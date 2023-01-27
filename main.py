@@ -59,36 +59,44 @@ def groceryStore():
 
     # Purchasable items from the grocery store.
     
-    # Produce
-    lettuce =
-    onion = 
-    tomato = 
-    apple = 
-    orange = 
-    lemon = 
-    pear = 
-    grapes = 
-    peppers = 
-    pickles = 
-    carrot =
-    potatoe =
-    raddish = 
-    squash = 
-    strawberry = 
-    blueberry = 
-    blackberry = 
-    squash = 
+    # Produce Isle
+    lettuce = 0
+    onion = 0
+    tomato = 0
+    apple = 0
+    orange = 0
+    lemon = 0
+    pear = 0
+    grapes = 0
+    peppers = 0
+    pickles = 0
+    carrot = 0
+    potatoe = 0
+    raddish = 0 
+    squash = 0
+    strawberry = 0
+    blueberry = 0 
+    blackberry = 0
+    squash = 0
     
-    # Canned foods
-     
-     
-    # Meats
-    chicken =
-    beef = 
-    turkey = 
-    lamb = 
-    pork = 
+    # Bakery Isle
+    bread = 0
+    bagel = 0
+    baguette = 0
+    donut = 0
     
-    # Seafood
+    # Meats Isle
+    chicken = 0
+    beef = 0
+    turkey = 0
+    lamb = 0
+    pork = 0
+    
+    # Seafood Isle
+    shrimp = 0
+    crab = 0
+    clam = 0
+    muscle = 0
+    talapia = 0
     
     
