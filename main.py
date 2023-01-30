@@ -1,27 +1,42 @@
+# Future versions of LifeSim will add more items and reatures!
+
+# TODO: Menus, Gui, Inventory, Shops, Grammer Checks & Typos, More Stores, Item, Food Recipes, Body Health System, etc.
+
 import easygui as eg
 
 health = 100  # Health of Character, [Default Value: 100]
 age = 60  # Age of Character
 money = 1000  # Money of Character, [Default Value: 100]
-#################################################################################################################################################################################
+#------------------------------------------------------------------------------------------#
 
-# Dialog Boxes
+# Title Screen
+def titleScreen():
+    title = "LifeSim | Welcome to the Elderly Stage of Life" # Title of Dialog Box, [Default Value: "LifeSim"]
+    # Displays Stats of Character + Dialog
+    stats = "\t\tYou have entered the Elderly Stage of your life\n\t   Tasks will now become harder and more physically demanding\n" \
+    +"|------------------------------------------------------------------------------|" \
+    +"\n\n\t\t\t\tMoney: $" + str(money)+"\n\t\t\t\tHealth: " + str(health) + " hp"+"\n\t\t\t\tAge: " + str(age) + " years"
+    eg.msgbox(stats, title,)
 
-print("You have entered the Elderly Stage of your life.")  # The last stage of your life.
+titleScreen()
+
+def titleScreen2():
+    title = "LifeSim | Welcome to the Elderly Stage of Life" # Title of Dialog Box, [Default Value: "LifeSim"]
+    stats = "Tasks will now become harder and more physically demanding." \
++"After completing these tasks, you will have a chance to have a Heart Attack." \
+    +"Having a heart attack increases your chance of dying early." \
++"It may take years off you life, take away your max health, lower your health, or cause you to die instantly."
+    eg.msgbox(stats, title,)
+
+#------------------------------------------------------------------------------------------#
 
 print("""Tasks will now become harder and more physically demanding.
-    After completing these tasks, you will have a chance to have a Heart Attack.""")
+After completing these tasks, you will have a chance to have a Heart Attack.""")
 
 print("""Having a heart attack increases your chance of dying early.
-    It may take years off you life, take away your max health, lower your health, or cause you to die instantly.""")
+It may take years off you life, take away your max health, lower your health, or cause you to die instantly.""")
 
-print("You are " + str(age) + " years old.")  # Displays the current age of your character.
-
-print("You have " + str(health) + " health.")  # Displays the current health of your character.
-
-print("You have $" + str(money))
-
-########################################################################################################################
+#------------------------------------------------------------------------------------------#
 
 # **MEDICAL AND HOSPITAL**
 
@@ -67,7 +82,8 @@ leftFoot = 100
 rightFoot = 100
 
 
-########################################################################################################################
+#------------------------------------------------------------------------------------------#
+
 def groceryStore():  # Saving for future use. | Can be used in other stages of life.
     global money  # Imports the global variable money to the grocery store function.
 
@@ -79,8 +95,6 @@ def groceryStore():  # Saving for future use. | Can be used in other stages of l
     water = 0 
     lemonJuice = 0
     limeJuice = 0
-    
-    
     
     #---------------------------------------------#
     
