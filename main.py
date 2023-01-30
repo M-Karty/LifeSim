@@ -35,12 +35,12 @@ physicalTherapy = 200   # Physical Therapy fee.
 
 doctorsOffice = 150  # A doctor's checkup can lead to the discovery of a(n) unknown disease or injury.
 
+# Depending on what car you purchase, the more health it has. If you crash an expensive car you have to pay more to repair it.
+# Elderly have a higher chance to get into car crashes based on your awareness and reaction time.
+
 carAccident = 100  # Car crashes can lead to buying a new car, or paying for damage.
 # If health < 25 before the accident, you will die immediately.
 # Otherwise, you will have to pay a fee depending on the damage to your body.
-
-# Depending on what car you purchase, the more health it has. If you crash an expensive car you have to pay more to repair it.
-# Elderly have a higher chance to get into car crashes based on your awareness and reaction time.
 
 # If you don't decide to continue driving, then you can hire people with your money.
 # If you do not have a car or money you can decide to take a loan from the bank.
@@ -73,7 +73,20 @@ def groceryStore():  # Saving for future use. | Can be used in other stages of l
 
     # Purchasable items from the grocery store.
 
+    # Drinks & Liquids Isle {
+    
+    # Liquids {
+    water = 0 
+    lemonJuice = 0
+    limeJuice = 0
+    
+    
+    
+    #---------------------------------------------#
+    
     # Produce Isle
+    
+    #Vegetables {
     lettuce = 0
     onion = 0
     tomato = 0
@@ -93,22 +106,103 @@ def groceryStore():  # Saving for future use. | Can be used in other stages of l
     blackberry = 0
     squash = 0
 
+    #---------------------------------------------#
+    
     # Bakery Isle
+    
+    # Breads {
     bread = 0
     bagel = 0
     baguette = 0
     donut = 0
+    
+    # Grain {
+    wheat = 0
+    flour = 0
+    oats = 0
+    rice = 0
+    barley = 0
 
+    #---------------------------------------------#
+    
     # Meats Isle
+    
+    # Meat {
     chicken = 0
     beef = 0
     turkey = 0
     lamb = 0
     pork = 0
 
+    #---------------------------------------------#
+    
     # Seafood Isle
+    
+    # Crustations {
     shrimp = 0
     crab = 0
     clam = 0
     muscle = 0
+    lobster = 0
+    
+    # Fish & Misc {
     tilapia = 0
+    squid = 0
+    octopus = 0
+    salmon = 0
+    sardine = 0
+    trout = 0
+    grouper = 0
+
+    #---------------------------------------------#
+    
+    # Spice Isle
+    
+    # Spices {
+    salt = 0 
+    pepper = 0
+    basil = 0
+    cumin = 0
+    garlicPowder = 0
+    thyme = 0
+    cinnamon = 0
+    chiles = 0
+    cloves = 0
+    driedHerbs = 0
+    fennel = 0
+    ginger = 0
+    mustardSeed = 0
+    vanilla = 0
+    
+    #---------------------------------------------#
+    
+    # Dairy Isle
+    
+    # Dairy {
+    milk = 0
+    eggs = 0
+    butter = 0
+    creamer = 0
+    dehydratedMilk = 0
+    
+    # Cheese {
+    parmesan = 0
+    threeCheeseBlend = 0
+    cheddar = 0
+    mozzerella = 0
+    
+    #---------------------------------------------#
+        
+    # Pasta Isle
+    
+    # Pasta {
+    angelHair = 0
+    speghetti = 0
+    elbow = 0
+    bowtie = 0
+    
+    # Sauce {
+    redSauce = 0
+    
+    #---------------------------------------------#
+ 
