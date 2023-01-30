@@ -1,5 +1,4 @@
 # LifeSim - Senior/Elder
+Final Project | Python | Expocomp | 2022
 
-# Final Project | Python | Expocomp | 2022
-
-# Marcus Karty
+Marcus Karty
