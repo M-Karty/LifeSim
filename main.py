@@ -18,7 +18,7 @@ def titleIntro():  # Welcome page explaining the current stage of life.
     title = "LifeSim | Welcome to the Elderly Stage of Life"  # Title of Dialog Box, [Default Value: "LifeSim"]
     # Displays Stats of Character + Dialog
     stats = "\t\tYou have entered the Elderly Stage of your life.\n\t" \
-            + "Tasks will now become harder and more physically demanding.\n" \
+            + "    Tasks will now become harder and more physically demanding.\n" \
             + "|------------------------------------------------------------------------------|" \
             + "\n\n\t\t\t\tMoney: $" + str(money) \
             + "\n\t\t\t\tHealth: " + str(health) + ' ' \
@@ -27,6 +27,7 @@ def titleIntro():  # Welcome page explaining the current stage of life.
 
 
 titleIntro()
+print("titleIntro")
 
 
 def titleHealth():  # Page explaining new challenges
@@ -43,6 +44,7 @@ def titleHealth():  # Page explaining new challenges
 
 
 titleHealth()
+print("titleHealth")
 
 
 def titleLimbs():  # Page explaining the health system
@@ -58,7 +60,7 @@ def titleLimbs():  # Page explaining the health system
 
 
 titleLimbs()
-
+print("titleLimbs")
 # ------------------------------------------------------------------------------------------#
 
 # **MEDICAL AND HOSPITAL**
@@ -179,7 +181,7 @@ def groceryStore():  # Saving for future use. | Can be used in other stages of l
 
     # Seafood Isle
 
-    # Crustations {
+    # Crustaceans {
     shrimp = 0
     crab = 0
     clam = 0
