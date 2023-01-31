@@ -10,24 +10,34 @@ money = 1000  # Money of Character, [Default Value: 100]
 #------------------------------------------------------------------------------------------#
 
 # Title Screen
-def titleScreen():
+
+def titleIntro():
+    global money, age, health
     title = "LifeSim | Welcome to the Elderly Stage of Life" # Title of Dialog Box, [Default Value: "LifeSim"]
     # Displays Stats of Character + Dialog
-    stats = "\t\tYou have entered the Elderly Stage of your life\n\t   Tasks will now become harder and more physically demanding\n" \
-    +"|------------------------------------------------------------------------------|" \
-    +"\n\n\t\t\t\tMoney: $" + str(money)+"\n\t\t\t\tHealth: " + str(health) + " hp"+"\n\t\t\t\tAge: " + str(age) + " years"
+    stats = "\t\tYou have entered the Elderly Stage of your life.\n\t" \
+        +"Tasks will now become harder and more physically demanding.\n" \
+            +"|------------------------------------------------------------------------------|" \
+                +"\n\n\t\t\t\tMoney: $" + str(money) \
+                    +"\n\t\t\t\tHealth: " + str(health)+' ' \
+                        + "hp"+"\n\t\t\t\tAge: "+ str(age) + " years"
+    eg.msgbox(stats, title,)
+titleIntro()
+
+def titleHealth():
+    
+    title = "LifeSim | New Health System & Challenges " # Title of Dialog Box, [Default Value: "LifeSim"]
+    
+    stats = "\t\t\t\tNew Health System\n\n" \
+        +" Heart Attacks - Having a heart attack increases your chance of dying early." \
+            +" It may take years off your life, take away your max health, lower your health, or cause you to die instantly.\n\n" \
+                +" Dementia - causes you to forget your tasks easier.\n\n" \
+                    +" Prone to illness - You catch illnesses faster & diseases last longer.\n\n" \
+                        +" Weak Joints - You are now unable to perform physically demanding activities.\n\n" \
+                            +" Decreased Awareness - Prone to more accidents & clumsiness."                  
     eg.msgbox(stats, title,)
 
-titleScreen()
-
-def titleScreen2():
-    title = "LifeSim | Welcome to the Elderly Stage of Life" # Title of Dialog Box, [Default Value: "LifeSim"]
-    stats = "Tasks will now become harder and more physically demanding." \
-+"After completing these tasks, you will have a chance to have a Heart Attack." \
-    +"Having a heart attack increases your chance of dying early." \
-+"It may take years off you life, take away your max health, lower your health, or cause you to die instantly."
-    eg.msgbox(stats, title,)
-
+titleHealth()
 #------------------------------------------------------------------------------------------#
 
 print("""Tasks will now become harder and more physically demanding.
