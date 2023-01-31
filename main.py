@@ -3,6 +3,7 @@
 # ToADD: Menus, Gui, Inventory, Shops, Grammar Checks & Typos, More Stores, Item, Food Recipes, Body Health System, etc.
 
 import easygui as eg
+from easygui import *
 
 health = 100  # Health of Character, [Default Value: 100]
 age = 60  # Age of Character
@@ -15,7 +16,7 @@ money = 1000  # Money of Character, [Default Value: 1000]
 
 def titleIntro():  # Welcome page explaining the current stage of life.
     global money, age, health
-    title = "LifeSim | Welcome to the Elderly Stage of Life"  # Title of Dialog Box, [Default Value: "LifeSim"]
+    title = "LifeSim (1.0.0) - Welcome to the Elderly Stage of Life"  # Title of Dialog Box, [Default Value: "LifeSim"]
     # Displays Stats of Character + Dialog
     stats = "\t\tYou have entered the Elderly Stage of your life.\n\t" \
             + "    Tasks will now become harder and more physically demanding.\n" \
@@ -31,7 +32,7 @@ print("titleIntro")
 
 
 def titleHealth():  # Page explaining new challenges
-    title = "LifeSim | New Challenges "  # Title of Dialog Box, [Default Value: "LifeSim"]
+    title = "LifeSim (1.0.0) - New Challenges "  # Title of Dialog Box, [Default Value: "LifeSim"]
 
     stats = "\t\t\t\tNew Challenges\n\n" \
             + " Heart Attacks - Having a heart attack increases your chance of dying early." \
@@ -48,7 +49,7 @@ print("titleHealth")
 
 
 def titleLimbs():  # Page explaining the health system
-    title = "LifeSim | New Health System"
+    title = "LifeSim (1.0.0) - New Health System"
 
     stats = "\t\t\t\tNew Health System\n\n" \
             + " A new health system has been implemented into the game!" \
@@ -61,6 +62,31 @@ def titleLimbs():  # Page explaining the health system
 
 titleLimbs()
 print("titleLimbs")
+
+
+def houseTransportMenu():  # Basically a teleport menu.
+    msg = "Where would you like to go? \nCurrent Location: " + "House"
+    title = "LifeSim (1.0.0) - Transport Menu"
+    choices = ["Home (tutorial)", '']
+    choice = choicebox(msg, title, choices)
+    print("houseTransportMenu")
+
+    if choice == choices[1]:
+        exceptionbox()
+        print("ERROR: Whitespace Selected")
+        exit()
+    elif choice == choice[0]:
+        pass
+
+
+
+houseTransportMenu()
+
+
+def houseRooms():  # Allows you to locate to different rooms in your house.
+    pass
+
+
 # ------------------------------------------------------------------------------------------#
 
 # **MEDICAL AND HOSPITAL**
