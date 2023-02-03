@@ -64,19 +64,18 @@ titleLimbs()
 print("titleLimbs")
 
 
-def houseTransportMenu():  # Basically a teleport menu.
-    msg = "Where would you like to go? \nCurrent Location: " + "House"
-    title = "LifeSim (1.0.0) - Transport Menu"
-    choices = ["Home (tutorial)", '']
-    choice = choicebox(msg, title, choices)
-    print("houseTransportMenu")
+def houseStarter():
+    title = "HouseStarter"
+    msgbox("Good luck!\n"
+           + "If this project continues, there will be many more updates.\n"
+           "You will be starting in your house.")
 
-    if choice == choices[1]:
-        exceptionbox()
-        print("ERROR: Whitespace Selected")
-        exit()
-    elif choice == choice[0]:
-        pass
+
+houseStarter()
+
+
+def houseTransportMenu():
+    pass
 
 
 houseTransportMenu()
